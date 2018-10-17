@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/h1"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/h3"
+    android:text="Name" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h5"
+            android:layout_marginTop="@dimen/h2"
+            android:hint="@string/name"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="@dimen/h3"
+            />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h5"
+            android:layout_marginTop="@dimen/h2"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="@dimen/h3"
+            />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h5"
+            android:layout_marginTop="@dimen/h2"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="@dimen/h3"
+            />
+
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h5"
+            android:layout_marginTop="@dimen/h1"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h5"
+            android:layout_marginTop="@dimen/h1"
+            android:text="@string/signup"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:onClick="onClick"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
